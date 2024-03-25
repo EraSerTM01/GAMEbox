@@ -1,0 +1,90 @@
+html {
+    --container: 1900px;
+    --padding-container: 10px box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.header {
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.search img,
+.person-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.promo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.promo h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+}
+
+.promo img {
+    width: 100%;
+}
+
+#GAMEPAD1 {
+    position: absolute;
+    top: 613px;
+    left: 0px;
+}
+
+#GAMEPAD2 {
+    position: absolute;
+    top: 693px;
+    right: 0px;
+}
