@@ -88,3 +88,58 @@ body {
     top: 693px;
     right: 0px;
 }
+
+#GAMEbox {
+    position: absolute;
+    top: 1433px;
+    left: 37px;
+}
+
+#GAMEbox2 {
+    position: absolute;
+    top: 1480px;
+    right: 23px;
+}
+
+
+.joinUS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.big-button {
+    width: 536px;
+    height: 230px;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #EBEBEB, #C1BDAE);
+    color: white;
+    text-decoration: none;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.small-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.small-buttons a.small {
+    display: inline-block;
+    width: 305px;
+    height: 112px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 112px;
+    margin: 10px;
+    background: linear-gradient(to bottom, #EBEBEB, #C1BDAE);
+    color: white;
+    text-decoration: none;
+    border-radius: 100%;
+}

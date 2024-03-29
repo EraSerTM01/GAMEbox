@@ -1,0 +1,74 @@
+.topReleases {
+    position: relative;
+    text-align: center;
+    background-color: #171a21;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.background-image {
+    position: relative;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.background-image h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.background-image h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.background-image .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.background-image article {
+    flex: 0 0 calc(15% - 10px);
+    margin: 10px; 
+    text-align: center;
+}
+
+.background-image article img {
+    max-width: 100%;
+    padding: 5px; 
+    border-radius: 10px; 
+}
+
+.background-image article h2 {
+    margin-top: 0; 
+}
+
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.arrow.left {
+    left: 10px; 
+}
+
+.arrow.right {
+    right: 10px; 
+}
+
+.arrow img {
+    width: 65px;
+    height: 96px;
+}
+
+.arrow button {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}

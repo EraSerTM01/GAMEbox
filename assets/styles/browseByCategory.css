@@ -1,0 +1,64 @@
+.browseByCategory {
+    position: relative;
+    margin: calc(20px + 90px) auto 20px auto; 
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.browseByCategory h2 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #FFF; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.browseByCategory a img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.browseByCategory button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+}
+
+.browseByCategory button img {
+    height: 96px;
+    width: 65px;
+}
+
+.browseByCategory a {
+    text-decoration: none;
+    color: #FFF; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 10px;
+}
+
+.browseByCategory a h2 {
+    font-size: 26px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: #000;
+}
