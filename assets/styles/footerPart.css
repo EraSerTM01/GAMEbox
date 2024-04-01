@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .footer {
     background-color: #171a21;
     color: #8c8c8c;
@@ -15,7 +16,6 @@ body {
 
 .footer a {
     display: inline-block;
-    width: 141px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -25,9 +25,29 @@ body {
     border-radius: 20%;
     background: linear-gradient(to bottom, #000, #D1C1C1);
     transition: background 0.3s ease;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .footer a:hover {
     background: linear-gradient(to bottom, #D1C1C1, #000);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer a {
+        width: 120px;
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer a {
+        width: 100px;
+        margin: 0 3px;
+    }
 }

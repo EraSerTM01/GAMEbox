@@ -39,3 +39,20 @@
 .Question .button:hover {
     background-color: #4c6e28;
 }
+
+
+@media (max-width: 768px) {
+    .section {
+        padding: 10px;
+    }
+    .Question {
+        padding: 10px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .section {
+        max-width: 90%;
+    }
+}
