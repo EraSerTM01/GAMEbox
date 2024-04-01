@@ -1,8 +1,8 @@
 .specialOffers {
     position: relative;
-    margin: calc(20px + 600px) auto 20px auto;
-    width: 90%;
-    max-width: 1200px;
+    margin: 10px auto; 
+    width: 95%; 
+    max-width: 100%;
 }
 
 .arrowButton {
@@ -10,30 +10,22 @@
     border: none;
     cursor: pointer;
     outline: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.left {
-    left: 10px;
-}
-
-.right {
-    right: 10px;
+    width: 40px; 
+    height: 40px; 
 }
 
 .games {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    overflow-y: hidden; 
+    -webkit-overflow-scrolling: touch; 
     position: relative;
-    padding: 0 100px; 
+    padding: 0 10px; 
 }
 
 .gameBlock {
     display: flex;
-    gap: 20px;
+    gap: 10px; 
     flex-wrap: wrap; 
 }
 
@@ -41,8 +33,20 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    flex: 1;
-    max-width: calc(50% - 10px);
+    flex: 0 0 calc(50% - 5px); 
+    margin-bottom: 10px; 
+}
+
+.ACECOMBAT7 {
+    max-width: 330px;
+}
+
+.AgainstTheStorm {
+    max-width: 330px;
+}
+
+.SevenAndBeyond {
+    max-width: 492px;
 }
 
 .gameBlock article img {
@@ -52,13 +56,13 @@
 }
 
 .gameBlock article h3 {
-    font-size: 18px;
+    font-size: 16px; 
     margin: 10px;
 }
 
 .gameBlock article h4 {
-    font-size: 14px;
-    margin: 0 10px 10px;
+    font-size: 12px; 
+    margin: 0 10px 5px; 
     color: #666;
 }
 
@@ -67,9 +71,9 @@
     background-color: #4b8b3b;
     color: #fff;
     text-align: center;
-    padding: 10px 20px;
+    padding: 8px 16px; 
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px; 
     border: 2px solid #4b8b3b;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -83,12 +87,23 @@
 
 .spacer {
     flex: 1;
-    min-width: 20px;
+    min-width: 10px; 
 }
 
 @media screen and (max-width: 768px) {
     .gameBlock {
         flex-direction: column;
+    } 
+
+    .arrowButton {
+        display: none;
     }
 
+    .games {
+        padding: 0; 
+    }
+
+    .gameBlock article {
+        flex-basis: 100%;
+    }
 }

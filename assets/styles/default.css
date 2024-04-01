@@ -1,7 +1,6 @@
 html {
-    --container: 1900px;
-    --padding-container: 10px box-sizing: border-box;
-
+    --container: 95%; 
+    --padding-container: 10px;
 }
 
 *,
@@ -12,12 +11,13 @@ html {
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    margin: 0;
 }
-
 
 .header {
     background-color: #000000;
-    padding: 10px 20px;
+    padding: var(--padding-container);
+    position: relative;
 }
 
 .menu {
@@ -26,10 +26,11 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu-item {
-    margin-right: 20px;
+    margin-right: calc(var(--padding-container) * 2);
 }
 
 .menu-item:last-child {
@@ -45,7 +46,7 @@ body {
 
 .logo img {
     width: 30px;
-    margin-right: 5px;
+    margin-right: calc(var(--padding-container) / 2);
 }
 
 .menu-item a {
@@ -70,58 +71,58 @@ body {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 120px;
+    font-size: 6vw; 
 }
 
 .promo img {
     width: 100%;
+    position: relative;
 }
 
 #GAMEPAD1 {
     position: absolute;
-    top: 613px;
-    left: 0px;
+    top: 35%;
+    left: 0;
 }
 
 #GAMEPAD2 {
     position: absolute;
-    top: 693px;
-    right: 0px;
+    top: 40%;
+    right: 0;
 }
 
 #GAMEbox {
     position: absolute;
-    top: 1433px;
-    left: 37px;
+    top: 70%;
+    left: 2%;
 }
 
 #GAMEbox2 {
     position: absolute;
-    top: 1480px;
-    right: 23px;
+    top: 72%;
+    right: 2%;
 }
-
 
 .joinUS {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: calc(var(--padding-container) * 20);
 }
 
 .big-button {
-    width: 536px;
-    height: 230px;
-    font-size: 80px;
+    width: 50%;
+    height: auto;
+    font-size: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, #EBEBEB, #C1BDAE);
     color: white;
     text-decoration: none;
-    border-radius: 100%;
-    margin-bottom: 20px;
+    border-radius: 50%;
+    margin-bottom: calc(var(--padding-container) * 2);
 }
 
 .small-buttons {
@@ -132,14 +133,58 @@ body {
 
 .small-buttons a.small {
     display: inline-block;
-    width: 305px;
-    height: 112px;
-    font-size: 36px;
+    width: 50%;
+    max-width: 305px;
+    height: auto;
+    font-size: 3vw;
     text-align: center;
     line-height: 112px;
-    margin: 10px;
+    margin: calc(var(--padding-container) * 1);
     background: linear-gradient(to bottom, #EBEBEB, #C1BDAE);
     color: white;
     text-decoration: none;
-    border-radius: 100%;
+    border-radius: 50%;
 }
+
+
+@media screen and (max-width: 768px) {
+    .promo h1 {
+        font-size: 8vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .promo h1 {
+        font-size: 10vw;
+    }
+    .big-button {
+        width: 80%;
+        font-size: 8vw;
+    }
+    .small-buttons a.small {
+        width: 80%;
+        font-size: 5vw;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    div.hiddenHeader {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    div.headerHiddenPhone,
+    div.hidenStartMenu {
+      display: none;
+    }
+  }
+
+ 
+
+  @media screen and (max-width: 1200px) {
+    div.hiddenPromo {
+      display: none;
+    }
+  }

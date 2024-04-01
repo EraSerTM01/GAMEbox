@@ -30,7 +30,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-
 .browseByCategory button {
     background: none;
     border: none;
@@ -61,4 +60,35 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .browseByCategory {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        overflow-x: hidden;
+    }
+
+    .browseByCategory a {
+        margin: 10px;
+    }
+
+    .browseByCategory a h2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .browseByCategory a img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .browseByCategory a h2 {
+        font-size: 18px;
+    }
 }
